@@ -18,6 +18,8 @@ If you want to create a product website like it was 1997, feel free to fork this
 # clone this repo
 git clone https://github.com/encrypted-dev/userbase-homepage.git
 
+
+## IMPORTANT: this only works for node v12! 
 # go to the repo directory
 cd userbase-homepage
 
@@ -40,10 +42,8 @@ npm run build
 
 ### Deployment
 
-You can 1-click deploy this to the internet using [Netlify](https://www.netlify.com):
+We are currently using cloudflare pages to deploy our platform.
 
-<!-- Markdown snippet -->
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/encrypted-dev/homepage)
 
 ## License
 
