@@ -3,20 +3,20 @@
   command = "npm run build"
 
 [[redirects]]
-  from = "https://userbase.dev/*"
+  from = "https://noebs.sd/*"
   to = "https://userbase.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://www.userbase.dev/*"
+  from = "https://www.noebs.sd/*"
   to = "https://userbase.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://userbase.netlify.com/*"
-  to = "https://userbase.com/:splat"
+  from = "https://noebs.netlify.com/*"
+  to = "https://noebs.com/:splat"
   status = 301
   force = true
 
