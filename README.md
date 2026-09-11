@@ -14,36 +14,70 @@ The repository was transferred from `adonese/userbase-homepage` to `noebs/websit
 
 ### Development
 
-```
-# clone this repo
+Use Node 24 with npm 11 for the commands below. The locked website generator
+requires Node 12.22.12 and npm 6.14.16; the commands invoke those versions in
+isolation. Cloudflare serves the resulting static files, with no Node server.
+
+```sh
 git clone https://github.com/noebs/website.git
-
-
-## IMPORTANT: this only works for node v12! 
-# go to the repo directory
 cd website
 
-# install all dependencies
-npm install
+# Install exactly the locked dependencies and generate dist/.
+npm run build:static
 
-# start the website on http://localhost:3000 with hot module reloading
-npm start
+# Start the development server at http://localhost:3000.
+npm exec --yes --package=node@12.22.12 --package=npm@6.14.16 -- npm start
 ```
 
 ### Production
 
-```
-# install all dependencies using the versions in package-lock.json
-npm ci
-
-# generate the build artifacts in the dist directory
-npm run build
+```sh
+npm run build:static
 ```
 
-### Deployment
+This runs a clean locked install before building `dist/`. Installing the locked
+`sharp@0.22.1` dependency directly with Node 24 fails; keep the build wrapper until
+the generator dependencies are upgraded together.
 
-We are currently using cloudflare pages to deploy our platform.
+### Cloudflare Pages deployment
 
+Deploy the generated `dist/` directory with Wrangler 4.131.0 running under Node 24.
+The existing Pages project is `userbase-homepage`, its production branch is
+`master`, and its domains are `userbase-homepage.pages.dev` and `noebs.sd`.
+The Pages project retains its historical name after the GitHub repository move.
+Its deployment configuration is checked in as [wrangler.toml](wrangler.toml).
+
+The Git build command is `npm run build:static`, with output directory `dist`
+and build image v3. Both preview and production use `NODE_VERSION=24.18.0` and
+`SKIP_DEPENDENCY_INSTALL=true`, so the wrapper controls the locked install.
+
+```sh
+# Authorize the Cloudflare account that manages noebs.sd.
+npm exec --yes --package=wrangler@4.131.0 -- wrangler login --device
+npm exec --yes --package=wrangler@4.131.0 -- wrangler whoami
+
+# Select the account that owns noebs.sd, especially with multiple memberships.
+export CLOUDFLARE_ACCOUNT_ID='<account-id>'
+npm exec --yes --package=wrangler@4.131.0 -- wrangler pages project list
+
+# Commit the intended source before deploying it.
+test -z "$(git status --porcelain)"
+npm run build:static
+npm exec --yes --package=wrangler@4.131.0 -- wrangler pages deploy dist \
+  --project-name userbase-homepage \
+  --branch master --commit-hash "$(git rev-parse HEAD)"
+```
+
+For a preview before production, run the deploy command with
+`--branch cloudflare-preview` and verify the returned preview URL first.
+
+Verify `https://noebs.sd/#android-wallet`, `/docs/`, the APK release link, and a
+missing URL returning HTTP 404 after deployment. The build emits a top-level
+`dist/404.html` so Pages handles this as a multi-page site. The APKs remain GitHub
+release assets; only website files go to Pages.
+Wrangler credentials belong in the local credential store, outside Git and
+`dist/`. Cloudflare can also accept manual Wrangler deployments for an existing
+Git-integrated Pages project.
 
 ## License
 

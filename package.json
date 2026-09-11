@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "rm -Rf dist",
     "build": "npm run clean && cross-env NODE_ENV=production webpack --mode production --config webpack.config.js",
+    "build:static": "sh scripts/build-static.sh",
     "start": "webpack-dev-server --mode development --config webpack.config.js"
   },
   "author": "Daniel Vassallo",

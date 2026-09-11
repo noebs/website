@@ -19,14 +19,14 @@ module.exports = (env, argv) => {
     const page = file.split('.')[0]
     let filename = './'
 
-    if (page !== 'index') {
+    if (page !== 'index' && page !== '404') {
       const pagePath = page.split('_')
       for (let i = 0; i < pagePath.length; i++) {
         filename += pagePath[i] + '/'
       }
     }
 
-    filename += 'index.html'
+    filename += page === '404' ? '404.html' : 'index.html'
 
     pages.push(new HtmlWebPackPlugin({
       template: './src/template.html',
@@ -86,9 +86,9 @@ module.exports = (env, argv) => {
       ...pages,
       new FaviconsWebpackPlugin('./src/img/icon.png'),
       new SocialTags({
-        appUrl: 'https://noebs.dev/',
+        appUrl: 'https://noebs.sd/',
         facebook: {
-          'og:url': "https://noebs.dev",
+          'og:url': "https://noebs.sd",
           'og:type': "website",
           'og:title': "noebs",
           'og:image': './src/img/og_card.jpg',
@@ -100,7 +100,7 @@ module.exports = (env, argv) => {
           "twitter:card": "summary_large_image",
           "twitter:site": "@_adonese",
           "twitter:creator": "@_adonese",
-          "twitter:url": "https://noebs.dev",
+          "twitter:url": "https://noebs.sd",
           "twitter:title": "noebs",
           "twitter:description": "The easiest and most secure payment integration in Sudan. Start for free and enjoy our seamless payment functionalities!",
           "twitter:image": './src/img/og_card.jpg'

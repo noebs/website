@@ -1,0 +1,9 @@
+# Keep the existing Pages project and its noebs.sd custom-domain association.
+name = "userbase-homepage"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-09-11"
+
+# The build wrapper installs its own locked legacy generator dependencies.
+[vars]
+NODE_VERSION = "24.18.0"
+SKIP_DEPENDENCY_INSTALL = "true"
