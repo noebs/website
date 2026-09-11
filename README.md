@@ -47,9 +47,16 @@ The existing Pages project is `userbase-homepage`, its production branch is
 The Pages project retains its historical name after the GitHub repository move.
 Its deployment configuration is checked in as [wrangler.toml](wrangler.toml).
 
-The Git build command is `npm run build:static`, with output directory `dist`
-and build image v3. Both preview and production use `NODE_VERSION=24.18.0` and
-`SKIP_DEPENDENCY_INSTALL=true`, so the wrapper controls the locked install.
+Deployments currently use Wrangler uploads from this repository. Cloudflare's
+existing Git integration does not follow a repository transfer; its old native
+Git triggers are disabled. See [Cloudflare's transfer guidance](https://developers.cloudflare.com/pages/configuration/git-integration/troubleshooting/).
+Git pushes alone do not deploy the site. External CI can use the same upload
+command below with a Pages deployment credential.
+
+The saved Cloudflare build settings are `npm run build:static`, output directory
+`dist`, and build image v3. Both preview and production use
+`NODE_VERSION=24.18.0` and `SKIP_DEPENDENCY_INSTALL=true`, so the wrapper controls
+the locked install. `vercel.json` disables the previous Vercel Git deployments.
 
 ```sh
 # Authorize the Cloudflare account that manages noebs.sd.
