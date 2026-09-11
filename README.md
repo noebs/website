@@ -86,6 +86,11 @@ Wrangler credentials belong in the local credential store, outside Git and
 `dist/`. Cloudflare can also accept manual Wrangler deployments for an existing
 Git-integrated Pages project.
 
+The [2026-09-11 deployment record](docs/deployment-20260911.json) records the
+production deployment, source revision, artifact hashes, browser checks and
+independent live review. It also records the previous production deployment for
+rollback through the Pages dashboard.
+
 ## License
 
 This project is released under the [MIT License](LICENSE).

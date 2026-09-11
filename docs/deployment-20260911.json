@@ -1,0 +1,902 @@
+{
+  "schemaVersion": 1,
+  "verifiedAtUtc": "2026-09-11T08:32:57.825479+00:00",
+  "website": "https://noebs.sd/#android-wallet",
+  "repository": "https://github.com/noebs/website",
+  "repositoryTransfer": {
+    "requestedAtUtc": "2026-09-11T07:41:53.069587+00:00",
+    "repositoryId": 236179089,
+    "oldName": "adonese/userbase-homepage",
+    "newName": "noebs/website",
+    "previousDefaultBranch": "master",
+    "previousPrivate": false,
+    "historyBackupCreated": true,
+    "completedAtUtc": "2026-09-11T07:47:40.219199+00:00",
+    "repositoryIdentityPreserved": true,
+    "allRemoteRefsPreserved": true,
+    "newUrl": "https://github.com/noebs/website",
+    "localRemoteUpdated": true
+  },
+  "deploymentMode": "Cloudflare Pages through Wrangler upload; native Git triggers disabled after repository transfer",
+  "sourceCommit": "3ec3910329823dd7119b8ccbe0a86febfe2be05d",
+  "staticBuildSourceCommit": "f00a2ff9f0276d0f0f176f96923a739a2ffab472",
+  "productionAuthority": {
+    "checked_at": "2026-09-11T08:26:14.450532+00:00",
+    "project": "userbase-homepage",
+    "project_identity_preserved": true,
+    "production_branch": "master",
+    "production_deployment": {
+      "id": "19fca28f-8ec9-4328-906c-ddd38e23ac00",
+      "url": "https://19fca28f.userbase-homepage.pages.dev",
+      "environment": "production",
+      "created_on": "2026-09-11T08:25:12.244477Z",
+      "deployment_trigger": {
+        "type": "ad_hoc",
+        "metadata": {
+          "branch": "master",
+          "commit_hash": "3ec3910329823dd7119b8ccbe0a86febfe2be05d",
+          "commit_message": "Document Cloudflare uploads after the repository transfer",
+          "commit_dirty": false
+        }
+      },
+      "latest_stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-09-11T08:25:13.53329Z",
+        "status": "success"
+      },
+      "uses_functions": false
+    },
+    "expected_source_commit": "3ec3910329823dd7119b8ccbe0a86febfe2be05d",
+    "source_commit_matches": true,
+    "domain_status": [
+      {
+        "name": "noebs.sd",
+        "status": "active"
+      }
+    ],
+    "native_git_triggers_disabled": true,
+    "previous_production_deployment_id": "5e7eb495-7d37-4dd6-97b7-68c53403e15b"
+  },
+  "productionUpload": {
+    "source_commit": "3ec3910329823dd7119b8ccbe0a86febfe2be05d",
+    "reviewed_build_commit": "f00a2ff9f0276d0f0f176f96923a739a2ffab472",
+    "changes_since_preview": [
+      "README.md",
+      "vercel.json"
+    ],
+    "branch": "master",
+    "artifact_files": 87,
+    "exact_preview_files": true,
+    "upload_exit": 0,
+    "completed_at": "2026-09-11T08:25:15.507926+00:00"
+  },
+  "build": {
+    "command": "NODE_ENV=production npm run build:static",
+    "exit_code": 0,
+    "duration_seconds": 15.6,
+    "has_root_404": true,
+    "has_mistaken_404_directory": false,
+    "artifact_file_count": 87
+  },
+  "artifactManifest": [
+    {
+      "path": "0cc45167abdd0c7d61bf8127ca9049e2.png",
+      "sha256": "c52580af8f394b453f11ebceb2984b48801f8bc1e2783343e252cf6ed23ffcf8",
+      "bytes": 40420
+    },
+    {
+      "path": "404.html",
+      "sha256": "2c5a9396e2a67fe5c95b23d7400a4bd34c699afacd61b6763026c891accb54ed",
+      "bytes": 8821
+    },
+    {
+      "path": "7e2db9f592e2e5aaed6a0ec6726479f1.svg",
+      "sha256": "3e4626734db0d5b35fc6d04a8d0c4110355e572bbdac4ced4a865b1939f39be3",
+      "bytes": 593
+    },
+    {
+      "path": "8e949e3c6d9da93e5ab2af004129c757.svg",
+      "sha256": "3440b4e5c4730cb395bc20ec597edf7d26a96bb37b42deb9d433866a04667f66",
+      "bytes": 639
+    },
+    {
+      "path": "about/index.html",
+      "sha256": "01c2620d157fc38ecf9c8d41237a153319f6be74ebb92e96b02304e8916dc40e",
+      "bytes": 10548
+    },
+    {
+      "path": "assets/android-chrome-144x144.png",
+      "sha256": "aedab4d46f7cb5bcd751f56ab64480f86f90e498150f4e941dfd9cf2ab209940",
+      "bytes": 1288
+    },
+    {
+      "path": "assets/android-chrome-192x192.png",
+      "sha256": "c89f72f019c1046898b1a218680ccfe89e0a848bd0d766a062dcebb02dc5668e",
+      "bytes": 1669
+    },
+    {
+      "path": "assets/android-chrome-256x256.png",
+      "sha256": "f8da8ae0d36387154986c8c317ef14a61e19e6df778a44b480fa954de92380d1",
+      "bytes": 2197
+    },
+    {
+      "path": "assets/android-chrome-36x36.png",
+      "sha256": "b5f86a34e069b553e6a598a2b64378cc72d34da293d762d83788417d9016582a",
+      "bytes": 573
+    },
+    {
+      "path": "assets/android-chrome-384x384.png",
+      "sha256": "7d8b028799be22ae7d098ee0bd0237ecf7bf269c4c1ed60155c324119670690a",
+      "bytes": 3483
+    },
+    {
+      "path": "assets/android-chrome-48x48.png",
+      "sha256": "8bb6bcf5429e08718fc2e83c67f77ed4c0e9fa8a1a00f1b946d1159d1ea49f82",
+      "bytes": 673
+    },
+    {
+      "path": "assets/android-chrome-512x512.png",
+      "sha256": "a5112bb5e3657848e9b399db7d5148e852e33c83e303484a08eb3ed746842c1c",
+      "bytes": 4829
+    },
+    {
+      "path": "assets/android-chrome-72x72.png",
+      "sha256": "c91414eca66933fae5013f278036038d19fbb6d79c1e6630f4e9127a3987066b",
+      "bytes": 792
+    },
+    {
+      "path": "assets/android-chrome-96x96.png",
+      "sha256": "0760e81d0da3e5f95ef9cc38058aa3279477eeafa1f3c8459ee4c9b491c3e002",
+      "bytes": 961
+    },
+    {
+      "path": "assets/apple-touch-icon-1024x1024.png",
+      "sha256": "047a3fed8b65cc13939a56e36269603362339ad2574e204165d2ae15bb3abbc3",
+      "bytes": 13456
+    },
+    {
+      "path": "assets/apple-touch-icon-114x114.png",
+      "sha256": "5253f0724dc18157c88f09754dc24d3213bebdb45195d4090a04d8177ea07903",
+      "bytes": 1063
+    },
+    {
+      "path": "assets/apple-touch-icon-120x120.png",
+      "sha256": "c71eee9683081946893cfea2a4b7137ee7759e28add3ba169c6a6cf7ddcfedc9",
+      "bytes": 1168
+    },
+    {
+      "path": "assets/apple-touch-icon-144x144.png",
+      "sha256": "4be3daabc2e25f4e0d9903dc1b096e6a6e620d4ab02d681d865fa2e1bcdd39a3",
+      "bytes": 1284
+    },
+    {
+      "path": "assets/apple-touch-icon-152x152.png",
+      "sha256": "af00c9ed84a47cd31a4d608372cf075ca2a1577ba11e206885656e1a18bd11a4",
+      "bytes": 1376
+    },
+    {
+      "path": "assets/apple-touch-icon-167x167.png",
+      "sha256": "1595273885c8bc29529e0699bf63b1190931caf93b9cd05f4a16bb90e9d0b51a",
+      "bytes": 1450
+    },
+    {
+      "path": "assets/apple-touch-icon-180x180.png",
+      "sha256": "e697915729307c46837cf1dd4ffe8e56ecb1616cb019ed57479c6ac337b20695",
+      "bytes": 1556
+    },
+    {
+      "path": "assets/apple-touch-icon-57x57.png",
+      "sha256": "e7309126cb1290b3427601aaf8c1b48541b0e1f7cf1254d9a9c8fb6e0c2e8d7b",
+      "bytes": 685
+    },
+    {
+      "path": "assets/apple-touch-icon-60x60.png",
+      "sha256": "cad2a7d1a2ced11c0bc2ced57e8cae8987d78ab3c96a37d3a7aedc29ee7b72af",
+      "bytes": 700
+    },
+    {
+      "path": "assets/apple-touch-icon-72x72.png",
+      "sha256": "9ec99fbf499e93085e542bde601a48215ccb522fd0b6b3b89d9f8324a41becc6",
+      "bytes": 781
+    },
+    {
+      "path": "assets/apple-touch-icon-76x76.png",
+      "sha256": "9112dd61365f47d656a7c232be5c9a6d48ae1e195f8d52f6b5819aeed1d2a3c8",
+      "bytes": 833
+    },
+    {
+      "path": "assets/apple-touch-icon-precomposed.png",
+      "sha256": "e697915729307c46837cf1dd4ffe8e56ecb1616cb019ed57479c6ac337b20695",
+      "bytes": 1556
+    },
+    {
+      "path": "assets/apple-touch-icon.png",
+      "sha256": "e697915729307c46837cf1dd4ffe8e56ecb1616cb019ed57479c6ac337b20695",
+      "bytes": 1556
+    },
+    {
+      "path": "assets/apple-touch-startup-image-1182x2208.png",
+      "sha256": "713bf12b2482f76b175d2cf172cad29692f4dcbd4be674f01185eddd1f1d8654",
+      "bytes": 33002
+    },
+    {
+      "path": "assets/apple-touch-startup-image-1242x2148.png",
+      "sha256": "8db3c0b143637938bbd196def0998af5618d66e2680254689117cc367c677eae",
+      "bytes": 24110
+    },
+    {
+      "path": "assets/apple-touch-startup-image-1496x2048.png",
+      "sha256": "a7bfac815636696055d96dcabd38e5f966bf8ed7171fcdeb14c0223bb01ddfbc",
+      "bytes": 36349
+    },
+    {
+      "path": "assets/apple-touch-startup-image-1536x2008.png",
+      "sha256": "e9b1eb25a0c51fcc03a6b8457be072ca5d793bc3ae8153db5e3391094ca673a6",
+      "bytes": 29596
+    },
+    {
+      "path": "assets/apple-touch-startup-image-320x460.png",
+      "sha256": "f4f437ae6e798633bbfb72cd77b17712b7f8af14c2d4e89abccb1927715ca587",
+      "bytes": 3221
+    },
+    {
+      "path": "assets/apple-touch-startup-image-640x1096.png",
+      "sha256": "ce16f62aa08cee88525735b1c446d181e194e5e2868cea1cca63c986861425ee",
+      "bytes": 8624
+    },
+    {
+      "path": "assets/apple-touch-startup-image-640x920.png",
+      "sha256": "2c2a6cb262037fb50b86208bb7b67ffafe16470a052922b7c0fe5796b372a205",
+      "bytes": 7847
+    },
+    {
+      "path": "assets/apple-touch-startup-image-748x1024.png",
+      "sha256": "d5b237c0307550f5b6caff5ffa9da35345e6f60548f132ba71c55e0de6a0d7d4",
+      "bytes": 12344
+    },
+    {
+      "path": "assets/apple-touch-startup-image-750x1294.png",
+      "sha256": "649d6e94fdaa1adc4993c1c8d90951116f91c1e8b4f6d3143142831da98fa752",
+      "bytes": 11075
+    },
+    {
+      "path": "assets/apple-touch-startup-image-768x1004.png",
+      "sha256": "e9b5c5080b8abdc9f5a6b0f55aa3754d18e2d9fb46533a28a27d1306ee93f6a3",
+      "bytes": 9728
+    },
+    {
+      "path": "assets/browserconfig.xml",
+      "sha256": "16428c98e498f609dc4930805beadf73a98cfd33bcd493fec39a6ab98525bf0c",
+      "bytes": 445
+    },
+    {
+      "path": "assets/coast-228x228.png",
+      "sha256": "b42ad7c54b3b67c7963d8786eb1d3e88e573a812b8afb9748af42ad3a60859ea",
+      "bytes": 1962
+    },
+    {
+      "path": "assets/favicon-16x16.png",
+      "sha256": "0482df124e43deb8907146d80d4ac358d845ac8c50034904ff6856afe6771b59",
+      "bytes": 359
+    },
+    {
+      "path": "assets/favicon-32x32.png",
+      "sha256": "5ca284ff8f1f3e82ad4e5d1889550367d6230ccccdebcce3343d8f8ea7d59a96",
+      "bytes": 536
+    },
+    {
+      "path": "assets/favicon.ico",
+      "sha256": "fffeaa3c72de585bfee164f8a0c2899529e122dfd4f9e0abd16ca1e7e3792b59",
+      "bytes": 33310
+    },
+    {
+      "path": "assets/firefox_app_128x128.png",
+      "sha256": "b6ed50d1b5f2a3a396e5fde86d2f9627bdc1288bceea9015b71f9a3cd166d2be",
+      "bytes": 4599
+    },
+    {
+      "path": "assets/firefox_app_512x512.png",
+      "sha256": "1303adcfc34a0b7e0909f8879831c5226eafd023005fc17da7675befef707191",
+      "bytes": 24317
+    },
+    {
+      "path": "assets/firefox_app_60x60.png",
+      "sha256": "e4661163f5218668be8b03c9d3876e45bcc963f264cb4a3ca978e244da690f9f",
+      "bytes": 2246
+    },
+    {
+      "path": "assets/manifest.json",
+      "sha256": "51c7cb3a4fe1561c03b31a82dd0fb2b92a4cc78f09850ccf4b334a7fbc1d7d0a",
+      "bytes": 1315
+    },
+    {
+      "path": "assets/manifest.webapp",
+      "sha256": "72ef32deb906d33f60a7d67060be07e3026db8d238f3eeda37026f40fba4d550",
+      "bytes": 310
+    },
+    {
+      "path": "assets/mstile-144x144.png",
+      "sha256": "aedab4d46f7cb5bcd751f56ab64480f86f90e498150f4e941dfd9cf2ab209940",
+      "bytes": 1288
+    },
+    {
+      "path": "assets/mstile-150x150.png",
+      "sha256": "935a5183bd3537b0232e3eb10f187cbf663712df708e1c93712971c5cc032536",
+      "bytes": 2256
+    },
+    {
+      "path": "assets/mstile-310x150.png",
+      "sha256": "1588f50a9c5785bfd6872ee2b2739bdf4beafe6bd63c2745c3a18838f66b71c7",
+      "bytes": 3801
+    },
+    {
+      "path": "assets/mstile-310x310.png",
+      "sha256": "bbea7a049566ce09a4ab571f1dd604be1adda680f0e40e10d2cbcaa4c0bdbdfa",
+      "bytes": 5474
+    },
+    {
+      "path": "assets/mstile-70x70.png",
+      "sha256": "408c31b4e247aaa0733643d03a7e6e7127e14edc608b404d245a1abe473fdd96",
+      "bytes": 1173
+    },
+    {
+      "path": "assets/yandex-browser-50x50.png",
+      "sha256": "79c7b66af2d8ac26176115bfc022d93842a6590c8e210668cea65c5a13d68e75",
+      "bytes": 650
+    },
+    {
+      "path": "assets/yandex-browser-manifest.json",
+      "sha256": "d78939b99526b65460448cddb540ce24f45b2ddc283e261c6a2dc60b4538ba4c",
+      "bytes": 155
+    },
+    {
+      "path": "contact/index.html",
+      "sha256": "6809c12a5e54086311af618d12f0515ae50bc0c7e2f058e78d6665402d6f9ff1",
+      "bytes": 8772
+    },
+    {
+      "path": "d8e9a27b9ee4f4f7f14c45ff901cc522.png",
+      "sha256": "23e416e90cea4af504f93cf194d909889cad03084c9b190382c5868171e2ab37",
+      "bytes": 23203
+    },
+    {
+      "path": "docs/faq/index.html",
+      "sha256": "601e4ac57edf18478ec697000a8fe6479b188e603386cbd61bae78793f5ce3e0",
+      "bytes": 9770
+    },
+    {
+      "path": "docs/index.html",
+      "sha256": "1c39b3af170f72f5f491f52b95ede38e3991de34ff03d1ec6322bca209ed239a",
+      "bytes": 9052
+    },
+    {
+      "path": "docs/installation/index.html",
+      "sha256": "51652e094243fc65dcb8e327c2d5053335120a8863639dffb255018c91c576c5",
+      "bytes": 10978
+    },
+    {
+      "path": "docs/quickstart/index.html",
+      "sha256": "8113eedd5f20609c0125d4b2ee6bb07273307d07bd7c9b1cb5841839f4f6824e",
+      "bytes": 37145
+    },
+    {
+      "path": "docs/sdk/delete-item/index.html",
+      "sha256": "77e79767e474f108737c011745c57c9d96e3681d1bd70e1c9523f99e07af149d",
+      "bytes": 9975
+    },
+    {
+      "path": "docs/sdk/delete-user/index.html",
+      "sha256": "1ea47b643ac396bf8f7d47a99d50a672a2a57921beede3fd8ce9d70364bc9f35",
+      "bytes": 9270
+    },
+    {
+      "path": "docs/sdk/index.html",
+      "sha256": "0b4ed4b58893248b5761b11e5d4e18921dc75c6b0610ae9fe29844bee41760ff",
+      "bytes": 10218
+    },
+    {
+      "path": "docs/sdk/init/index.html",
+      "sha256": "04d1081f04c848677fc2cc45e1ff74fbf9e15362e11f9c55d83c031ab2b3a291",
+      "bytes": 10608
+    },
+    {
+      "path": "docs/sdk/insert-item/index.html",
+      "sha256": "86143e79c1d61dcb8701d391439c8328479c044166ee5ee72cd47699368bc152",
+      "bytes": 10119
+    },
+    {
+      "path": "docs/sdk/open-database/index.html",
+      "sha256": "155154183813548417058d73e5e083015792653d7dccdbbe5112bdf199833780",
+      "bytes": 10330
+    },
+    {
+      "path": "docs/sdk/put-transaction/index.html",
+      "sha256": "3d7c72615f94ab4cbdc78c089f81dbb1a39d463cb6288395e50e4e3f4f4408a7",
+      "bytes": 10728
+    },
+    {
+      "path": "docs/sdk/sign-in/index.html",
+      "sha256": "e14bd0a824fdc799804df42f98787abd8af45e706010c53478c7be96783f779c",
+      "bytes": 11620
+    },
+    {
+      "path": "docs/sdk/sign-out/index.html",
+      "sha256": "f1d77d167b3cb05123d8bd9c4239db2390207bc12a20430a4f7f2a20c5507aa3",
+      "bytes": 9191
+    },
+    {
+      "path": "docs/sdk/sign-up/index.html",
+      "sha256": "de62250a6ad57bf063c3342a086b80c79cb5c19face360b45d41ed45cfda568e",
+      "bytes": 12224
+    },
+    {
+      "path": "docs/sdk/update-item/index.html",
+      "sha256": "8304a31f19bbd3fe1dee0647bd81fef2e3c1ef388735a16745f93633cfe9e6dc",
+      "bytes": 10197
+    },
+    {
+      "path": "docs/sdk/update-user/index.html",
+      "sha256": "1eceed25cefd896c824c77ba89ca06d6b5603c3c9bfd7b7601c6cb0bc5962482",
+      "bytes": 11643
+    },
+    {
+      "path": "e6b74b41ad25b1bc5e6b5a921666fc6f.svg",
+      "sha256": "8870988863a06a2214e772284297ce7b0cbbb78c4e450db821596b5c19911a51",
+      "bytes": 907
+    },
+    {
+      "path": "index.html",
+      "sha256": "72c91473596b8dc13242acc51c0e2d0e0de2d1bee9d0ec57f2e729afc3ee0121",
+      "bytes": 12370
+    },
+    {
+      "path": "mailing-list/index.html",
+      "sha256": "7bac62b2124bc9431305b81a4fad7925f42e673443822b4db712bf9ce34b6b03",
+      "bytes": 9669
+    },
+    {
+      "path": "main.js",
+      "sha256": "2d15a121d1e256c8e0876eb7a6c811f3f761a7f3471f6910a2f1d78f9be6a808",
+      "bytes": 34897
+    },
+    {
+      "path": "main.js.map",
+      "sha256": "f956add7b1d3f95165b92ce110de69c2f6a19d0bf5ca14046c5967a17497570f",
+      "bytes": 98686
+    },
+    {
+      "path": "og_card.jpg",
+      "sha256": "4ba2e5dd899be8eb3a0f25b19a9c4fa0b4f7a40debcf00ed521957497a2a0b25",
+      "bytes": 267360
+    },
+    {
+      "path": "policies/gdpr/index.html",
+      "sha256": "05e394c7bfa11b086ce89ee17607ad80cf5baa8dc63caf4a1c7554ba717587ee",
+      "bytes": 9990
+    },
+    {
+      "path": "policies/index.html",
+      "sha256": "98ac41565b21936856ddf5f3f561a3485e885119c5aa07a69392c0755ce371fe",
+      "bytes": 9130
+    },
+    {
+      "path": "policies/privacy/index.html",
+      "sha256": "7f48aef69ea07dbdd662f5ce1fe763bdda673d48fc164d43344ab435e81b9e7d",
+      "bytes": 15181
+    },
+    {
+      "path": "policies/refund/index.html",
+      "sha256": "d5d6bf28be443bcebb23c6a748ff03e3d5689eb6d9c2b7e7260f62022ffff5dc",
+      "bytes": 9039
+    },
+    {
+      "path": "policies/subprocessors/index.html",
+      "sha256": "7a856b749ff1f11d4071a36eb3ec52e36f2b89bbb4ce6a0901c8c0efab75372b",
+      "bytes": 9288
+    },
+    {
+      "path": "policies/terms/index.html",
+      "sha256": "1ada694207f8e5a99909995d78031751770437796a32dae5b3e4e48417604d83",
+      "bytes": 26265
+    },
+    {
+      "path": "pricing/index.html",
+      "sha256": "d4f8ee3ffcf26c1c74a3ade2f9c7a66759982f8bb81f2cf20502ee6b35f3c443",
+      "bytes": 12383
+    },
+    {
+      "path": "register/index.html",
+      "sha256": "b1fcdda9e9fdf9e6d7c4144a067b268d36da81770050176d9d314a034183d17d",
+      "bytes": 10255
+    },
+    {
+      "path": "style.css",
+      "sha256": "f1f234ffeb2b5a52db2555f6ab39a07dd2c40e1a6f0507be02a48cd141453507",
+      "bytes": 14404
+    }
+  ],
+  "previewHttpVerification": {
+    "base_url": "https://a8be548f.userbase-homepage.pages.dev",
+    "checked_at": "2026-09-11T08:22:08.987917+00:00",
+    "checks": [
+      {
+        "path": "/",
+        "status": 200,
+        "expected_status": 200,
+        "exact_artifact_match": true,
+        "sha256": "72c91473596b8dc13242acc51c0e2d0e0de2d1bee9d0ec57f2e729afc3ee0121",
+        "final_url": "https://a8be548f.userbase-homepage.pages.dev/",
+        "content_type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "has_wallet_link": true,
+        "has_canonical_source": true
+      },
+      {
+        "path": "/docs/quickstart/",
+        "status": 200,
+        "expected_status": 200,
+        "exact_artifact_match": true,
+        "sha256": "8113eedd5f20609c0125d4b2ee6bb07273307d07bd7c9b1cb5841839f4f6824e",
+        "final_url": "https://a8be548f.userbase-homepage.pages.dev/docs/quickstart/",
+        "content_type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "has_wallet_link": false,
+        "has_canonical_source": true
+      },
+      {
+        "path": "/style.css",
+        "status": 200,
+        "expected_status": 200,
+        "exact_artifact_match": true,
+        "sha256": "f1f234ffeb2b5a52db2555f6ab39a07dd2c40e1a6f0507be02a48cd141453507",
+        "final_url": "https://a8be548f.userbase-homepage.pages.dev/style.css",
+        "content_type": "text/css; charset=utf-8",
+        "server": "cloudflare",
+        "has_wallet_link": false,
+        "has_canonical_source": false
+      },
+      {
+        "path": "/main.js",
+        "status": 200,
+        "expected_status": 200,
+        "exact_artifact_match": true,
+        "sha256": "2d15a121d1e256c8e0876eb7a6c811f3f761a7f3471f6910a2f1d78f9be6a808",
+        "final_url": "https://a8be548f.userbase-homepage.pages.dev/main.js",
+        "content_type": "application/javascript",
+        "server": "cloudflare",
+        "has_wallet_link": false,
+        "has_canonical_source": false
+      },
+      {
+        "path": "/noebs-deploy-missing-20260911",
+        "status": 404,
+        "expected_status": 404,
+        "exact_artifact_match": true,
+        "sha256": "2c5a9396e2a67fe5c95b23d7400a4bd34c699afacd61b6763026c891accb54ed",
+        "final_url": "https://a8be548f.userbase-homepage.pages.dev/noebs-deploy-missing-20260911",
+        "content_type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "has_wallet_link": false,
+        "has_canonical_source": true
+      }
+    ],
+    "passed": true
+  },
+  "productionBrowserVerification": {
+    "base_url": "https://noebs.sd",
+    "passed": true,
+    "checks": [
+      {
+        "width": 390,
+        "status": 200,
+        "mobile_menu_works": true,
+        "no_horizontal_overflow": true,
+        "anchor_visible": true,
+        "download_link": "https://github.com/tutipay/android-releases/releases/download/v26.09.11-alpha.2/noebs-wallet-26.09.11-alpha.2-universal.apk",
+        "source_link": true,
+        "page_errors": []
+      },
+      {
+        "width": 800,
+        "status": 200,
+        "mobile_menu_works": null,
+        "no_horizontal_overflow": true,
+        "anchor_visible": true,
+        "download_link": "https://github.com/tutipay/android-releases/releases/download/v26.09.11-alpha.2/noebs-wallet-26.09.11-alpha.2-universal.apk",
+        "source_link": true,
+        "page_errors": []
+      },
+      {
+        "width": 1280,
+        "status": 200,
+        "mobile_menu_works": null,
+        "no_horizontal_overflow": true,
+        "anchor_visible": true,
+        "download_link": "https://github.com/tutipay/android-releases/releases/download/v26.09.11-alpha.2/noebs-wallet-26.09.11-alpha.2-universal.apk",
+        "source_link": true,
+        "page_errors": []
+      }
+    ]
+  },
+  "independentLiveReview": {
+    "artifact": {
+      "canonical_file_manifest_sha256": "93239134d8e0f14abcedf8d5fa4749e47a8e6aecb4eea7049e71eab482b338b9",
+      "file_count": 87,
+      "matches_prior_independent_artifact_manifest": true
+    },
+    "checks": [
+      {
+        "android_wallet_anchor": true,
+        "artifact_sha256": "72c91473596b8dc13242acc51c0e2d0e0de2d1bee9d0ec57f2e729afc3ee0121",
+        "bytes": 12738,
+        "canonical_website_repository_link": true,
+        "cloudflare_edge_header_present": true,
+        "content_length": null,
+        "content_type": "text/html; charset=utf-8",
+        "edge_transformations": {
+          "all_script_sources_recognized": true,
+          "analytics_script_host": "static.cloudflareinsights.com",
+          "cloudflare_web_analytics_script_count": 1,
+          "exact_navigation_anchor_checked": true,
+          "exactly_matches_artifact_after_only_these_transformations": true,
+          "legacy_github_link_http_to_https": true,
+          "rewritten_link_from": "http://github.com/adonese/noebs",
+          "rewritten_link_to": "https://github.com/adonese/noebs"
+        },
+        "expected_status": 200,
+        "final_host": "noebs.sd",
+        "final_scheme": "https",
+        "https_ok": true,
+        "method": "GET",
+        "name": "homepage",
+        "raw_matches_artifact": false,
+        "requested_url": "https://noebs.sd/",
+        "sha256": "ee8b1da3b3b552c5e673a1959b691ea49faf4c4f9495bfdb5d93802e2711b7b8",
+        "social_metadata": {
+          "og:url": "https://noebs.sd",
+          "twitter:url": "https://noebs.sd"
+        },
+        "status": 200,
+        "status_ok": true,
+        "tls_certificate_verification_required": true,
+        "universal_apk_link": true,
+        "versioned_release_notes_link": true
+      },
+      {
+        "artifact_sha256": "8113eedd5f20609c0125d4b2ee6bb07273307d07bd7c9b1cb5841839f4f6824e",
+        "bytes": 37513,
+        "canonical_website_repository_link": true,
+        "cloudflare_edge_header_present": true,
+        "content_length": null,
+        "content_type": "text/html; charset=utf-8",
+        "edge_transformations": {
+          "all_script_sources_recognized": true,
+          "analytics_script_host": "static.cloudflareinsights.com",
+          "cloudflare_web_analytics_script_count": 1,
+          "exactly_matches_artifact_after_only_these_transformations": true,
+          "legacy_github_link_http_to_https": true,
+          "rewritten_link_from": "http://github.com/adonese/noebs",
+          "rewritten_link_to": "https://github.com/adonese/noebs"
+        },
+        "expected_status": 200,
+        "final_host": "noebs.sd",
+        "final_scheme": "https",
+        "https_ok": true,
+        "method": "GET",
+        "name": "docs",
+        "raw_matches_artifact": false,
+        "requested_url": "https://noebs.sd/docs/quickstart/",
+        "sha256": "4395788241f527afa82f15d37f4e1594deedaf389be54da7df2881e51811adb7",
+        "social_metadata": {
+          "og:url": "https://noebs.sd",
+          "twitter:url": "https://noebs.sd"
+        },
+        "status": 200,
+        "status_ok": true,
+        "tls_certificate_verification_required": true
+      },
+      {
+        "artifact_sha256": "f1f234ffeb2b5a52db2555f6ab39a07dd2c40e1a6f0507be02a48cd141453507",
+        "bytes": 14404,
+        "cloudflare_edge_header_present": true,
+        "content_length": "14404",
+        "content_type": "text/css; charset=utf-8",
+        "expected_status": 200,
+        "final_host": "noebs.sd",
+        "final_scheme": "https",
+        "https_ok": true,
+        "method": "GET",
+        "name": "css",
+        "raw_matches_artifact": true,
+        "requested_url": "https://noebs.sd/style.css",
+        "sha256": "f1f234ffeb2b5a52db2555f6ab39a07dd2c40e1a6f0507be02a48cd141453507",
+        "status": 200,
+        "status_ok": true,
+        "tls_certificate_verification_required": true
+      },
+      {
+        "artifact_sha256": "2d15a121d1e256c8e0876eb7a6c811f3f761a7f3471f6910a2f1d78f9be6a808",
+        "bytes": 34897,
+        "cloudflare_edge_header_present": true,
+        "content_length": null,
+        "content_type": "application/javascript",
+        "expected_status": 200,
+        "final_host": "noebs.sd",
+        "final_scheme": "https",
+        "https_ok": true,
+        "method": "GET",
+        "name": "javascript",
+        "raw_matches_artifact": true,
+        "requested_url": "https://noebs.sd/main.js",
+        "sha256": "2d15a121d1e256c8e0876eb7a6c811f3f761a7f3471f6910a2f1d78f9be6a808",
+        "status": 200,
+        "status_ok": true,
+        "tls_certificate_verification_required": true
+      },
+      {
+        "artifact_sha256": "2c5a9396e2a67fe5c95b23d7400a4bd34c699afacd61b6763026c891accb54ed",
+        "bytes": 9189,
+        "canonical_website_repository_link": true,
+        "cloudflare_edge_header_present": true,
+        "content_length": null,
+        "content_type": "text/html; charset=utf-8",
+        "edge_transformations": {
+          "all_script_sources_recognized": true,
+          "analytics_script_host": "static.cloudflareinsights.com",
+          "cloudflare_web_analytics_script_count": 1,
+          "exactly_matches_artifact_after_only_these_transformations": true,
+          "legacy_github_link_http_to_https": true,
+          "rewritten_link_from": "http://github.com/adonese/noebs",
+          "rewritten_link_to": "https://github.com/adonese/noebs"
+        },
+        "expected_status": 404,
+        "final_host": "noebs.sd",
+        "final_scheme": "https",
+        "https_ok": true,
+        "method": "GET",
+        "name": "missing",
+        "not_found_content": true,
+        "raw_matches_artifact": false,
+        "requested_url": "https://noebs.sd/independent-review-missing-route-20260911",
+        "sha256": "04ca134168b8888c97df04090aa3479fef4d6a36501770f9c268e7cf10de7ab2",
+        "social_metadata": {
+          "og:url": "https://noebs.sd",
+          "twitter:url": "https://noebs.sd"
+        },
+        "status": 404,
+        "status_ok": true,
+        "tls_certificate_verification_required": true
+      },
+      {
+        "android_wallet_anchor": true,
+        "artifact_sha256": "72c91473596b8dc13242acc51c0e2d0e0de2d1bee9d0ec57f2e729afc3ee0121",
+        "bytes": 12370,
+        "canonical_website_repository_link": true,
+        "cloudflare_edge_header_present": true,
+        "content_length": null,
+        "content_type": "text/html; charset=utf-8",
+        "expected_status": 200,
+        "final_host": "19fca28f.userbase-homepage.pages.dev",
+        "final_scheme": "https",
+        "https_ok": true,
+        "method": "GET",
+        "name": "deployment_homepage",
+        "raw_matches_artifact": true,
+        "requested_url": "https://19fca28f.userbase-homepage.pages.dev/",
+        "sha256": "72c91473596b8dc13242acc51c0e2d0e0de2d1bee9d0ec57f2e729afc3ee0121",
+        "social_metadata": {
+          "og:url": "https://noebs.sd",
+          "twitter:url": "https://noebs.sd"
+        },
+        "status": 200,
+        "status_ok": true,
+        "tls_certificate_verification_required": true,
+        "universal_apk_link": true,
+        "versioned_release_notes_link": true
+      },
+      {
+        "baseline_sha256": "ff10155bdff18c3fb85a6af7e32f498ce205269c78156c640c6bef5b169cc50d",
+        "baseline_status": 200,
+        "bytes": 362,
+        "cloudflare_edge_header_present": false,
+        "content_length": "362",
+        "content_type": "application/json",
+        "expected_status": 200,
+        "final_host": "api.noebs.sd",
+        "final_scheme": "https",
+        "https_ok": true,
+        "method": "GET",
+        "name": "assetlinks",
+        "requested_url": "https://api.noebs.sd/.well-known/assetlinks.json",
+        "sha256": "ff10155bdff18c3fb85a6af7e32f498ce205269c78156c640c6bef5b169cc50d",
+        "status": 200,
+        "status_ok": true,
+        "tls_certificate_verification_required": true,
+        "unchanged_from_baseline": true
+      },
+      {
+        "apk_body_downloaded": false,
+        "cloudflare_edge_header_present": false,
+        "content_length": "117460819",
+        "content_length_matches_signed_artifact": true,
+        "content_type": "application/vnd.android.package-archive",
+        "expected_bytes": 117460819,
+        "expected_status": 200,
+        "final_host": "release-assets.githubusercontent.com",
+        "final_scheme": "https",
+        "https_ok": true,
+        "method": "HEAD",
+        "name": "universal_apk",
+        "requested_url": "https://github.com/tutipay/android-releases/releases/download/v26.09.11-alpha.2/noebs-wallet-26.09.11-alpha.2-universal.apk",
+        "status": 200,
+        "status_ok": true,
+        "tls_certificate_verification_required": true
+      },
+      {
+        "apk_body_downloaded": false,
+        "cloudflare_edge_header_present": false,
+        "content_length": "60311427",
+        "content_length_matches_signed_artifact": true,
+        "content_type": "application/vnd.android.package-archive",
+        "expected_bytes": 60311427,
+        "expected_status": 200,
+        "final_host": "release-assets.githubusercontent.com",
+        "final_scheme": "https",
+        "https_ok": true,
+        "method": "HEAD",
+        "name": "arm64_apk",
+        "requested_url": "https://github.com/tutipay/android-releases/releases/download/v26.09.11-alpha.2/noebs-wallet-26.09.11-alpha.2-arm64-v8a.apk",
+        "status": 200,
+        "status_ok": true,
+        "tls_certificate_verification_required": true
+      },
+      {
+        "cloudflare_edge_header_present": true,
+        "content_length": null,
+        "content_type": "text/html; charset=utf-8",
+        "expected_status": 200,
+        "final_host": "noebs.sd",
+        "final_scheme": "https",
+        "https_ok": true,
+        "method": "HEAD",
+        "name": "http_to_https",
+        "requested_url": "http://noebs.sd/",
+        "status": 200,
+        "status_ok": true,
+        "tls_certificate_verification_required": true
+      }
+    ],
+    "credential_or_account_reads_performed": false,
+    "deployed_source_commit": "3ec3910329823dd7119b8ccbe0a86febfe2be05d",
+    "deployment_url": "https://19fca28f.userbase-homepage.pages.dev/",
+    "files_changed_between_build_and_deployment_source": [
+      "README.md",
+      "vercel.json"
+    ],
+    "findings": [],
+    "limitations": [
+      "Custom-domain HTML is not byte-identical to the uploaded files: one existing GitHub HTTP link is upgraded to HTTPS and one Cloudflare Web Analytics script is injected. Raw hashes are retained; equality after only these two recognized transformations was checked separately.",
+      "HTTPS and public HTTP behavior were independently checked. Cloudflare account settings, domain ownership and disabled native Git triggers were not inspected by this reviewer in this live pass.",
+      "APK URLs were verified with HEAD and expected Content-Length only; APK bodies were not downloaded again. APK signatures and file hashes were independently checked before publication.",
+      "No browser JavaScript execution or authenticated wallet flow was performed during this website deployment check."
+    ],
+    "production_mutations_performed": false,
+    "production_url": "https://noebs.sd/",
+    "reviewed_at_utc": "2026-09-11T08:31:21.195363+00:00",
+    "reviewer": "independent-review-subagent",
+    "schema_version": 1,
+    "sources": [
+      "https://developers.cloudflare.com/web-analytics/get-started/",
+      "https://developers.cloudflare.com/ssl/edge-certificates/additional-options/automatic-https-rewrites/"
+    ],
+    "static_build_source_commit": "f00a2ff9f0276d0f0f176f96923a739a2ffab472",
+    "verdict": "PASS with explicitly characterized Cloudflare HTML transformations"
+  },
+  "independentLiveReviewSha256": "de5b6ff1fdf2564931277b555f2b860c152ffc321de8fdee36684fcc511106a7",
+  "rollback": {
+    "project": "userbase-homepage",
+    "previousProductionDeploymentId": "5e7eb495-7d37-4dd6-97b7-68c53403e15b",
+    "instructions": "In Cloudflare Pages, select this successful production deployment and use Rollback to this deployment. Do not change domain or DNS associations."
+  }
+}
