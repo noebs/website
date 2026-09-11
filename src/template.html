@@ -9,8 +9,8 @@
 
 <body>
   <header class="sm:sticky top-0 bg-white z-50 shadow-none sm:shadow-md mb-0 sm:mb-8">
-    <div class="sm:flex sm:justify-between sm:items-center py-2 px-4">
-      <div class="flex items-center justify-between h-10">
+    <div class="sm:flex sm:flex-wrap sm:justify-between sm:items-center py-2 px-4">
+      <div class="flex items-center justify-between h-10 sm:flex-shrink-0">
         <div class="flex-shrink-0">
           <%= page !== 'index' ? require('html-loader!./partials/logo.html') : null %>
         </div>
@@ -27,6 +27,7 @@
         <a href="/pricing/" class="menu-item">Pricing</a>
         <a href="/docs/" class="menu-item">Docs</a>
         <a href="/contact/" class="menu-item">Contact</a>
+        <a href="/#android-wallet" class="menu-item">Android wallet</a>
         <a href="https://blog.noebs.dev" class="menu-item text-red-700 hover:text-blue">Blog</a>
         <a href="https://new.cashq.app" class="rounded-lg px-6 py-2 no-underline bg-yellowish font-black cursor-pointer text-gray-900 inline-block leading-none hover:text-orange-700 mt-2 ml-0 sm:ml-2 sm:mt-0">For Merchants!</a>
       </nav>
@@ -42,12 +43,13 @@
           <a href="http://github.com/adonese/noebs" class="py-2 leading-none px-2">GitHub</a>
           <a href="https://twitter.com/_adonese" class="py-2 leading-none px-2">Twitter</a>
           <a href="https://web.soluspay.net" class="py-2 leading-none px-2">Cashq Web</a>
+          <a href="https://github.com/tutipay/android-releases/releases/tag/v26.09.11-alpha.2" class="py-2 leading-none px-2">Noebs Android demo</a>
           <a href="https://cash.soluspay.net" class="py-2 leading-none px-2">Download Cashq<%= page !== 'index' ? require('html-loader!./partials/android.html') :  require('html-loader!./partials/android.html')%></a>
           <a href="https://t.me/cashqbot" class="py-2 leading-none px-2">Cashqbot<%= page !== 'index' ? require('html-loader!./partials/bot.html') :  require('html-loader!./partials/bot.html')%></a>
         </nav>
       </div>
       <div class="text-gray-500 text-xs">
-        This site is <a href="https://github.com/adonese/userbase-homepage" target="_blank">open source</a>
+        This site is <a href="https://github.com/noebs/website" target="_blank" rel="noopener noreferrer">open source</a>
       </div>
     </footer>
   </div>

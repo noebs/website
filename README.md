@@ -1,8 +1,8 @@
-# Userbase Homepage
+# Noebs website
 
-This is what generates the [userbase.com](https://userbase.com) homepage. If you're looking for the open source version of Userbase, you can find that at [encrypted-dev/userbase](https://github.com/encrypted-dev/userbase).
+This repository generates [noebs.sd](https://noebs.sd), including the public Android wallet download links. Signed APKs and checksums are published separately in [tutipay/android-releases](https://github.com/tutipay/android-releases/releases/tag/v26.09.11-alpha.2).
 
-If you want to create a product website like it was 1997, feel free to fork this repo and reuse anything you want for your site (except the name and the logo).
+The repository was transferred from `adonese/userbase-homepage` to `noebs/website` with its history preserved. It was adapted from the Userbase homepage; the original MIT license remains in [LICENSE](LICENSE).
 
 ### Structure
 
@@ -16,12 +16,12 @@ If you want to create a product website like it was 1997, feel free to fork this
 
 ```
 # clone this repo
-git clone https://github.com/encrypted-dev/userbase-homepage.git
+git clone https://github.com/noebs/website.git
 
 
 ## IMPORTANT: this only works for node v12! 
 # go to the repo directory
-cd userbase-homepage
+cd website
 
 # install all dependencies
 npm install

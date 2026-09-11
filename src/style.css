@@ -60,6 +60,10 @@ h2 {
   @apply text-center text-3xl font-black leading-tight tracking-tight mb-4;
 }
 
+#android-wallet {
+  scroll-margin-top: 9rem;
+}
+
 h3 {
   @apply font-bold text-xl tracking-tight mt-4;
 }
