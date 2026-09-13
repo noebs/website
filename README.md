@@ -1,6 +1,6 @@
 # Noebs website
 
-This repository generates [noebs.sd](https://noebs.sd), including the public Android wallet download links. Signed APKs and checksums are published separately in [tutipay/android-releases](https://github.com/tutipay/android-releases/releases/tag/v26.09.11-alpha.2).
+This repository generates [noebs.sd](https://noebs.sd), including the public Android wallet download links. Signed APKs and checksums are published separately in [tutipay/android-releases](https://github.com/tutipay/android-releases/releases/tag/v26.09.13-alpha.1).
 
 The repository was transferred from `adonese/userbase-homepage` to `noebs/website` with its history preserved. It was adapted from the Userbase homepage; the original MIT license remains in [LICENSE](LICENSE).
 
@@ -94,3 +94,13 @@ rollback through the Pages dashboard.
 ## License
 
 This project is released under the [MIT License](LICENSE).
+
+### Account signup
+
+The homepage, navigation, pricing and `/register/` all use the same account entry
+at `https://api.noebs.sd/account/`. The Noebs API gateway hosts the account setup
+page and its server session. The static website never collects passwords or
+OAuth tokens. Sign-in, registration, email verification and recovery use the
+shared Keycloak browser flow; account access and profile setup resume on the
+server. Publishing the site requires the matching `/account/` gateway release
+and the linked Android release to be available first.
